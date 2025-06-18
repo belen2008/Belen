@@ -79,3 +79,25 @@ listadediccionarios = [
 ]
 print("quien es el primer elemento?",
       listadediccionarios[0]["nombre"])
+
+
+#clase 18/6
+
+
+
+print("hola") 
+
+def pedir_confirmacion(prompt,reintentos=4, queja="si o no, porfavor!"):
+    while true:
+        ok = input(prompt)
+        if ok in ("s" , "S" , "si", "SI"):
+            return true 
+        if ok in ("n" , "no" , "No" , " NO"):
+            return False
+        reintentamos =reintentos -1 
+        if reintentos < 0:
+            raise OSError("usuario duro")
+        print(queja)
+
+#Esta funcion puede ser llamada de distintas maneras:
+#-pasando solo el argumento obligatorio:
